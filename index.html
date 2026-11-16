@@ -8,8 +8,8 @@
   <meta name="theme-color" content="#f3f1ec" />
   <meta name="robots" content="noindex" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f3f1ec'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23b8391a'/%3E%3C/svg%3E" />
-  <script type="module" crossorigin src="/assets/index--a1q_NT4.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CSTs6-T0.css">
+  <script type="module" crossorigin src="/assets/index-D3ODxPhs.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-53LZig8J.css">
 </head>
 <body>
   <a class="skip" href="#main">跳到正文</a>
@@ -22,13 +22,13 @@
   <header class="nav" id="nav">
     <a class="nav__logo" href="#top" aria-label="回到顶部">顾俊灏<span class="dot"></span></a>
     <nav class="nav__links" aria-label="主导航">
-      <a href="#cv">履历</a><a href="#practice">实践</a><a href="#selected">精选</a><a href="#archive">档案</a><a href="#contact">联系</a>
+      <a href="#results">成果</a><a href="#practice">实践</a><a href="#selected">精选</a><a href="#archive">档案</a><a href="#cv">履历</a><a href="#contact">联系</a>
     </nav>
     <button class="nav__menu" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">菜单</button>
   </header>
   <div class="mmenu" id="mobileMenu" hidden>
     <nav aria-label="移动端导航">
-      <a href="#cv">履历</a><a href="#practice">实践</a><a href="#selected">精选</a><a href="#archive">档案</a><a href="#contact">联系</a>
+      <a href="#results">成果</a><a href="#practice">实践</a><a href="#selected">精选</a><a href="#archive">档案</a><a href="#cv">履历</a><a href="#contact">联系</a>
     </nav>
   </div>
 
@@ -59,28 +59,16 @@
       </dl>
     </section>
 
-    <!-- CV -->
-    <section class="cv wrap" id="cv" aria-labelledby="cvTitle">
-      <header class="sec-head reveal">
-        <span class="sec-no">01</span>
-        <h2 id="cvTitle">履历</h2>
-        <p>产品 × 增长 × 内容</p>
-      </header>
-      <ol class="tl" id="timeline"></ol>
-      <h3 class="tl__sub reveal">教育</h3>
-      <ol class="tl tl--edu" id="edu"></ol>
-    </section>
-
-    <!-- GROWTH -->
-    <section class="growth" id="practice" aria-labelledby="gTitle">
+    <!-- GROWTH RESULTS -->
+    <section class="growth" id="results" aria-labelledby="resultsTitle">
       <div class="wrap">
         <header class="sec-head reveal">
-          <span class="sec-no">02</span>
-          <h2 id="gTitle">实践与成果</h2>
-          <p>业务工具 · 模型评测 · 场景推广</p>
+          <span class="sec-no">01</span>
+          <h2 id="resultsTitle">增长结果</h2>
+          <p>用户增长 · 内容表现</p>
         </header>
 
-        <div class="g-main">
+        <div class="g-main product-growth">
           <figure class="slope reveal" id="slope">
             <div class="slope__tabs" role="tablist" aria-label="切换指标">
               <button role="tab" aria-selected="true" data-k="both">全部</button>
@@ -114,6 +102,18 @@
           <p class="method-context">经手合作内容累计 <strong>300万+ 赞藏</strong></p>
           <div class="creator-examples"><a href="https://www.xiaohongshu.com/explore/6adec4e8000000001402adfd" target="_blank" rel="noopener"><span>关小姜</span><strong>5.5万+ 赞藏</strong><small>高收入朋友的共同规律 ↗</small></a><a href="https://www.xiaohongshu.com/explore/6acc635c0000000012036526" target="_blank" rel="noopener"><span>进击的李李</span><strong>约 2.5万 赞藏</strong><small>从想法到实际尝试 ↗</small></a><a href="https://www.xiaohongshu.com/explore/6acd7e0b000000001303cd74" target="_blank" rel="noopener"><span>云树 cloudtree</span><strong>5,126 赞藏</strong><small>用 AI 做《窦娥冤》游戏 ↗</small></a><a href="https://www.xiaohongshu.com/explore/6adf2cbd0000000003002715" target="_blank" rel="noopener"><span>章炎炎</span><strong>3,646 赞藏</strong><small>用 AI 做烹饪游戏 ↗</small></a></div><p class="creator-date">赞藏 = 点赞 + 收藏 · 关小姜更新于 2026.11.12，其余为 2026.11.02 记录</p>
         </div>
+
+      </div>
+    </section>
+
+    <!-- PRACTICE -->
+    <section class="practice" id="practice" aria-labelledby="gTitle">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="sec-no">02</span>
+          <h2 id="gTitle">产品实践</h2>
+          <p>业务工具 · AI 工作流 · 模型评测</p>
+        </header>
 
         <div class="block reveal" id="pipe"></div>
         <div class="block reveal" id="flow"></div>
@@ -152,10 +152,22 @@
       <div class="apreview" id="apreview" aria-hidden="true"><img alt="" /></div>
     </section>
 
+    <!-- CV -->
+    <section class="cv wrap" id="cv" aria-labelledby="cvTitle">
+      <header class="sec-head reveal">
+        <span class="sec-no">05</span>
+        <h2 id="cvTitle">履历</h2>
+        <p>产品 × 增长 × 内容</p>
+      </header>
+      <ol class="tl" id="timeline"></ol>
+      <h3 class="tl__sub reveal">教育</h3>
+      <ol class="tl tl--edu" id="edu"></ol>
+    </section>
+
     <!-- CONTACT -->
     <section class="contact" id="contact" aria-labelledby="cTitle">
       <div class="wrap">
-        <p class="sec-no">05</p>
+        <p class="sec-no">06</p>
         <h2 id="cTitle" class="contact__big">聊聊？</h2>
         <div class="contact__row">
           <a class="contact__mail" href="mailto:gujunhao3711@163.com">gujunhao3711@163.com</a>
