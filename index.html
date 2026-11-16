@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>顾俊灏 — 作品与实践</title>
+  <meta name="description" content="顾俊灏的作品与实践：业务工具、AI 工作流、模型评测与产品增长，以及亲手制作的网站、交互、游戏和开源项目。" />
+  <meta name="theme-color" content="#f3f1ec" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f3f1ec'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23b8391a'/%3E%3C/svg%3E" />
+  <script type="module" crossorigin src="/assets/index-B9bOgy2R.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CSTs6-T0.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__name"><span>顾俊灏</span><span class="serif">Gu Junhao</span></div>
+  </div>
+  <noscript><style>#loader{display:none}.hero__name .line>span{transform:none}.hero__lede{opacity:1;transform:none}</style></noscript>
+
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" aria-label="回到顶部">顾俊灏<span class="dot"></span></a>
+    <nav class="nav__links" aria-label="主导航">
+      <a href="#cv">履历</a><a href="#practice">实践</a><a href="#selected">精选</a><a href="#archive">档案</a><a href="#contact">联系</a>
+    </nav>
+    <button class="nav__menu" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">菜单</button>
+  </header>
+  <div class="mmenu" id="mobileMenu" hidden>
+    <nav aria-label="移动端导航">
+      <a href="#cv">履历</a><a href="#practice">实践</a><a href="#selected">精选</a><a href="#archive">档案</a><a href="#contact">联系</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-label="首屏">
+      <div class="stage" id="stage" tabindex="0" role="region" aria-label="作品画布：拖动或用方向键浏览，回车打开中间的作品" aria-roledescription="可拖动画布"></div>
+      <div class="hero__veil"></div>
+      <div class="hero__type">
+        <p class="hero__kicker"><span class="pulse"></span>AI 产品 · 实践与作品</p>
+        <h1 class="hero__name"><span class="line"><span>顾俊灏</span></span><span class="line serif"><span>Gu Junhao</span></span></h1>
+        <p class="hero__lede">把 AI 能力做成可用的产品，<br />也推动它被理解、被使用。</p>
+      </div>
+      <div class="hero__foot">
+        <span class="hero__hint" id="heroHint">拖动画布 · 点击作品</span>
+        <a class="hero__down" href="#intro">向下 ↓</a>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro wrap" id="intro">
+      <p class="intro__big reveal">我在 MiniMax 做<em>大模型与 Agent 产品增长</em>：从业务中的协作问题出发，搭建工具和 AI 工作流；通过出题与实测检验模型能力，再结合用户和内容反馈推进应用场景。我也亲手做<em class="serif">网站、游戏与开源 Skill</em>，把探索变成可运行的作品。</p>
+      <dl class="facts reveal">
+        <div><dt>现在</dt><dd>MiniMax · 大模型与 Agent 产品增长</dd></div>
+        <div><dt>关注</dt><dd>产品设计 · AI 应用 · 增长实践</dd></div>
+        <div><dt>创作</dt><dd>网站 · 交互 · 游戏 · 开源</dd></div>
+        <div><dt>邮箱</dt><dd><a href="mailto:gujunhao3711@163.com">gujunhao3711@163.com</a></dd></div>
+      </dl>
+    </section>
+
+    <!-- CV -->
+    <section class="cv wrap" id="cv" aria-labelledby="cvTitle">
+      <header class="sec-head reveal">
+        <span class="sec-no">01</span>
+        <h2 id="cvTitle">履历</h2>
+        <p>产品 × 增长 × 内容</p>
+      </header>
+      <ol class="tl" id="timeline"></ol>
+      <h3 class="tl__sub reveal">教育</h3>
+      <ol class="tl tl--edu" id="edu"></ol>
+    </section>
+
+    <!-- GROWTH -->
+    <section class="growth" id="practice" aria-labelledby="gTitle">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="sec-no">02</span>
+          <h2 id="gTitle">实践与成果</h2>
+          <p>业务工具 · 模型评测 · 场景推广</p>
+        </header>
+
+        <div class="g-main">
+          <figure class="slope reveal" id="slope">
+            <div class="slope__tabs" role="tablist" aria-label="切换指标">
+              <button role="tab" aria-selected="true" data-k="both">全部</button>
+              <button role="tab" aria-selected="false" data-k="dnu">DNU 日新增</button>
+              <button role="tab" aria-selected="false" data-k="dau">DAU 日活跃</button>
+            </div>
+            <div class="slope__play"><span id="growthPhase" role="status">期初 · 指数 100</span><button class="btn btn--ghost" id="growthReplay" aria-label="重播增长变化">重播变化 ↻</button></div>
+            <div class="slope__chart" id="slopeChart"></div>
+            <figcaption>期初统一为 100。DNU、DAU 对比 2026 年 9—11 月。动画只连接起止值，不代表逐日走势；同期增长不归因于单一策略。</figcaption>
+            <p class="slope__actions">期间工作：人群调整 · Brief 迭代 · 真实落地</p>
+          </figure>
+          <div class="g-story reveal">
+            <div class="g-big"><span class="num">+234.8%</span><span class="lab">DNU · 日新增用户</span></div>
+            <div class="g-big"><span class="num">+128.4%</span><span class="lab">DAU · 日活跃用户</span></div>
+            <h3>我做了什么</h3>
+            <ol class="moves">
+              <li><b>换人群。</b>按 DNU 和产品定位，内容从纯 how-to 转向小白也看得懂的应用场景，同时保留面向开发者的模型实测。</li>
+              <li><b>改 brief。</b>给合作方产品亮点、演示和十余个参考爆款；按学生（简历/作品集）、职场（办公提效）、副业匹配场景。</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Content judgment: supporting evidence for growth -->
+        <div class="block content-case reveal" id="contentCase">
+          <span class="method-label">内容判断</span><div class="block__head"><h3>让功能介绍，走到真实产物</h3><p>观众需要知道的，不只是产品有什么功能，还有“我能用它做成什么”。在两篇合作内容中，我坚持实际落地，把动机、过程与产物补成一个完整的故事。</p></div>
+          <div class="method-cases">
+            <article><span>01 / AI 副业场景</span><h4>先给出使用动机</h4><p>在 brief 中补入 AI 副业场景，要求把产品能力落实到具体产物，让观众看见一种可尝试的用法。</p></article>
+            <article><span>02 / 性格小测试</span><h4>把体验真正做出来</h4><p>提出性格小测试这样的落地案例，让内容从“可以做”走到实际演示，用完成的作品承接前面的故事。</p></article>
+          </div>
+          <p class="method-result"><strong>代表合作内容破万赞藏</strong><span>方法复用到后续合作后，再次出现高赞藏内容。</span></p>
+          <p class="method-context">经手合作内容累计 <strong>300万+ 赞藏</strong></p>
+          <div class="creator-examples"><a href="https://www.xiaohongshu.com/explore/6adec4e8000000001402adfd" target="_blank" rel="noopener"><span>关小姜</span><strong>5.5万+ 赞藏</strong><small>高收入朋友的共同规律 ↗</small></a><a href="https://www.xiaohongshu.com/explore/6acc635c0000000012036526" target="_blank" rel="noopener"><span>进击的李李</span><strong>约 2.5万 赞藏</strong><small>从想法到实际尝试 ↗</small></a><a href="https://www.xiaohongshu.com/explore/6acd7e0b000000001303cd74" target="_blank" rel="noopener"><span>云树 cloudtree</span><strong>5,126 赞藏</strong><small>用 AI 做《窦娥冤》游戏 ↗</small></a><a href="https://www.xiaohongshu.com/explore/6adf2cbd0000000003002715" target="_blank" rel="noopener"><span>章炎炎</span><strong>3,646 赞藏</strong><small>用 AI 做烹饪游戏 ↗</small></a></div><p class="creator-date">赞藏 = 点赞 + 收藏 · 关小姜更新于 2026.11.12，其余为 2026.11.02 记录</p>
+        </div>
+
+        <div class="block reveal" id="pipe"></div>
+        <div class="block reveal" id="flow"></div>
+
+      </div>
+    </section>
+
+    <!-- SELECTED -->
+    <section class="selected" id="selected" aria-labelledby="sTitle">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="sec-no">03</span>
+          <h2 id="sTitle">精选作品</h2>
+          <p>滚动网站 · 交互体验 · 可玩游戏</p>
+        </header>
+      </div>
+      <div class="wrap">
+      <aside class="oss-proof reveal" aria-label="GitHub 开源成果">
+        <a class="oss-proof__count" href="https://github.com/guzhezao?tab=repositories" target="_blank" rel="noopener"><strong>1,500<span>+</span></strong><span>GitHub Stars ↗</span></a>
+        <div class="oss-proof__story"><span>公开仓库累计 · 2026.11.12</span><p>把作品做出来，<br>也把方法开放出来。</p></div>
+        <div class="oss-proof__repos"><a href="https://github.com/guzhezao/scroll-web-skills" target="_blank" rel="noopener"><span>Scroll Web Skills</span><b>★ 239</b></a><a href="https://github.com/guzhezao/parcel-shift" target="_blank" rel="noopener"><span>PARCEL SHIFT</span><b>★ 167</b></a><a href="https://github.com/guzhezao/needle" target="_blank" rel="noopener"><span>NEEDLE</span><b>★ 128</b></a></div>
+      </aside>
+      </div>
+      <div id="featured"></div>
+    </section>
+
+    <!-- ARCHIVE -->
+    <section class="archive wrap" id="archive" aria-labelledby="aTitle" data-layout="gallery">
+      <header class="sec-head reveal">
+        <span class="sec-no">04</span>
+        <h2 id="aTitle">全部档案</h2>
+        <p id="archCount"></p>
+      </header>
+      <div class="archive-tools"><div class="filters" role="toolbar" aria-label="按类别筛选" id="filters"></div><div class="archive-layout" role="group" aria-label="作品展示方式"><button aria-pressed="true" data-layout="gallery">画廊</button><button aria-pressed="false" data-layout="list">列表</button></div></div>
+      <ul class="alist" id="alist"></ul>
+      <div class="apreview" id="apreview" aria-hidden="true"><img alt="" /></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="cTitle">
+      <div class="wrap">
+        <p class="sec-no">05</p>
+        <h2 id="cTitle" class="contact__big">聊聊？</h2>
+        <div class="contact__row">
+          <a class="contact__mail" href="mailto:gujunhao3711@163.com">gujunhao3711@163.com</a>
+          <button class="btn" id="copyMail">复制邮箱</button>
+          <span class="copied" id="copied" role="status"></span>
+        </div>
+        <div class="contact__links">
+          <a href="https://github.com/guzhezao" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+      <footer class="foot wrap"><span>© 2026 顾俊灏</span><span>作品画面来自实际项目与成片</span></footer>
+    </section>
+  </main>
+
+  <!-- CASE OVERLAY -->
+  <div class="case" id="case" role="dialog" aria-modal="true" aria-labelledby="caseTitle" hidden>
+    <div class="case__bg" data-close></div>
+    <article class="case__panel" tabindex="-1">
+      <header class="case__bar">
+        <span class="case__idx" id="caseIdx"></span>
+        <div class="case__nav">
+          <button class="btn btn--ghost" id="casePrev" aria-label="上一个作品">← 上一个</button>
+          <button class="btn btn--ghost" id="caseNext" aria-label="下一个作品">下一个 →</button>
+          <button class="btn" id="caseClose" data-close aria-label="关闭">关闭 Esc</button>
+        </div>
+      </header>
+      <div class="case__body" id="caseBody"></div>
+    </article>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__label" id="cursorLabel"></span></div>
+</body>
+</html>
